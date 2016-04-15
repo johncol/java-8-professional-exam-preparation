@@ -11,4 +11,9 @@ public class Utils {
         System.out.println();
     }
 
+    public static void separator(int position) {
+        System.out.println("--------------------- " + position);
+        System.out.println();
+    }
+
 }
