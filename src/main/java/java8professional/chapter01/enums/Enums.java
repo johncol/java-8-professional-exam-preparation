@@ -1,4 +1,4 @@
-package java8professional.chapter01;
+package java8professional.chapter01.enums;
 
 import static java8professional.util.Utils.*;
 
