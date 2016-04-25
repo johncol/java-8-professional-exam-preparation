@@ -1,5 +1,8 @@
 package java8professional.chapter02.designpatterns.inmmutable;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -34,4 +37,8 @@ public final class Animal {
         return favoriteFoods.get(index);
     }
 
+    @Override
+    public String toString() {
+        return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+    }
 }

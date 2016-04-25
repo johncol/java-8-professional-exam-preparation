@@ -4,6 +4,8 @@ public class Animal {
 
     private String name;
     private int age;
+    private boolean example1;
+    private Boolean example2;
 
     public Animal(String name) {
         setName(name);
@@ -29,5 +31,13 @@ public class Animal {
 
     public int getAge() {
         return age;
+    }
+
+    public boolean isExample1() {
+        return example1;
+    }
+
+    public Boolean getExample2() {
+        return example2;
     }
 }
