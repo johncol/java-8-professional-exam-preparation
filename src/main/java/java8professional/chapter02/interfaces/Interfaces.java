@@ -27,3 +27,7 @@ class Eagle implements Fly {
     }
 
 }
+
+interface Ia { default void a() {} }
+interface Ib { default void a() {} }
+//interface Ic extends Ia, Ib {} // does not compile
