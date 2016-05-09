@@ -15,7 +15,7 @@ public class QueueMethods {
 
         System.out.println("----------------------------------");
 
-        // FIFO
+        // LIFO
         // push to insert
         // peek to see but not remove it
         // poll to remove

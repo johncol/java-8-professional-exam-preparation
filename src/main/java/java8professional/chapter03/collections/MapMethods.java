@@ -19,6 +19,7 @@ public class MapMethods {
         System.out.println(map.put("koala", "bamboo"));
         System.out.println(map.put("lion", "meat"));
         System.out.println(map.put("giraffe", "leaf"));
+        System.out.println(map.put("giraffe", "leaf"));
         System.out.println();
 
         System.out.println(map.get("koala"));
@@ -37,6 +38,7 @@ public class MapMethods {
         System.out.println(map.put("koala", "bamboo"));
         System.out.println(map.put("lion", "meat"));
         System.out.println(map.put("giraffe", "leaf"));
+        System.out.println(map.put("giraffe", "leaf"));
         System.out.println();
 
         System.out.println(map.get("koala"));
@@ -51,7 +53,6 @@ public class MapMethods {
     }
 
     static void general() {
-
         Map<String, String> map = new TreeMap<>();
         map.put("koala", "bamboo");
         map.put("lion", "meat");
@@ -60,7 +61,5 @@ public class MapMethods {
         System.out.println(map.size());
         System.out.println(map.containsKey("lion"));
         System.out.println(map.containsValue("lion"));
-
-
     }
 }

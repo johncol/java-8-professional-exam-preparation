@@ -18,3 +18,10 @@ public class Generics<T> {
     }
 
 }
+
+class NewGenerics<String> extends Generics<String> {
+
+    public NewGenerics(String input) {
+        super(input);
+    }
+}

@@ -14,9 +14,9 @@ public class MapNewMethods {
         favorites.put("London", null);
         System.out.println(favorites);
 
-        favorites.putIfAbsent("Jenny", "Tram");
-        favorites.putIfAbsent("Tom", "Tram");
-        favorites.putIfAbsent("Sam", "Tram");
+        System.out.println(favorites.putIfAbsent("Jenny", "Tram"));
+        System.out.println(favorites.putIfAbsent("Tom", "Tram"));
+        System.out.println(favorites.putIfAbsent("Sam", "Tram"));
         System.out.println(favorites);
 
         BiFunction<String, String, String> mapper = (f1, f2) -> f1.length() >= f2.length() ? f1 : f2;

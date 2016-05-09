@@ -17,6 +17,7 @@ public class SetMethods {
         System.out.println(set.add(5));
         System.out.println(set.add(10));
         System.out.println(set.add(66));
+        System.out.println(set.add(null));
         System.out.println(set);
         System.out.println();
 
@@ -26,6 +27,7 @@ public class SetMethods {
         System.out.println(set.add(5));
         System.out.println(set.add(10));
         System.out.println(set.add(66));
+        // System.out.println(set.add(null)); // throws null pointer exception
         System.out.println(set);
         System.out.println();
 

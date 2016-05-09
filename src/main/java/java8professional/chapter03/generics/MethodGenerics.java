@@ -2,6 +2,8 @@ package java8professional.chapter03.generics;
 
 import java8professional.chapter02.functionalprogramming.Animal;
 
+import java.util.List;
+
 public class MethodGenerics {
 }
 
@@ -27,5 +29,24 @@ class Whatever {
         new Whatever().nonStaticMethod(false);
         new Whatever().<Integer>nonStaticMethod(5);
     }
+
+}
+
+abstract class WhateverAbstract<T> {
+
+    T instance;
+
+    public WhateverAbstract(T instance) {
+        this.instance = instance;
+    }
+
+    abstract <U> void getClone(U whatever);
+
+    abstract <U extends T> void getClone2(U whatever);
+
+    // does not compile
+    // abstract <V super T> void getClone3(V whatever);
+
+    abstract void doSomething(List<? super T> list);
 
 }

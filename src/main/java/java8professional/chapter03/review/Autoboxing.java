@@ -4,6 +4,7 @@ public class Autoboxing {
 
     public static void main(String[] args) {
         System.out.println(new Boolean("true"));
+        System.out.println(new Boolean(null));
         System.out.println(new Byte("4"));
         System.out.println(new Short("4"));
         System.out.println(new Integer("4"));

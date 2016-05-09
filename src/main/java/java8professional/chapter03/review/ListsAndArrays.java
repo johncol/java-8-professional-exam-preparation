@@ -31,7 +31,17 @@ public class ListsAndArrays {
         System.out.println(Arrays.toString(array));
         System.out.println(list);
 
-        list.add("will fail! (UnsupportedOperationException)");
+        try {
+            list.add("will fail! (UnsupportedOperationException)");
+        } catch(UnsupportedOperationException e) {
+            System.out.println("failed! UnsupportedOperationException");
+        }
+
+        try {
+            list.remove(0);
+        } catch(UnsupportedOperationException e) {
+            System.out.println("failed! UnsupportedOperationException");
+        }
     }
 
 }
