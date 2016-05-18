@@ -1,9 +1,13 @@
 package java8professional.chapter04.streams;
 
 import java.util.Comparator;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamMethods {
+public class StreamCommonTerminalOperations {
 
     /**
      * Stream:
@@ -18,14 +22,16 @@ public class StreamMethods {
      *  - forEach() : void
      *  - reduce() : T
      *  - reduce() : Optional<T>
+     *  - collect() : T
      */
 
 
     public static void main(String[] args) {
         Stream<Integer> stream;
+        Stream<String> strings;
 
         stream = Stream.iterate(1, x -> x + 1).limit(10);
-        stream.forEach(StreamMethods::printWithComma);
+        stream.forEach(StreamCommonTerminalOperations::printWithComma);
         System.out.println();
 
         // count
@@ -97,7 +103,6 @@ public class StreamMethods {
 
         // reduce
         // Optional<T> reduce(BinaryOperator<T> accumulator)
-
         stream = Stream.iterate(1, x -> x + 1).limit(4);
         stream.reduce((x, y) -> x + y).ifPresent(System.out::println);
 
@@ -109,6 +114,25 @@ public class StreamMethods {
         System.out.println(Stream.empty().reduce((x, y) -> x));
         System.out.println(Stream.of(1).reduce((x, y) -> x + y));
         System.out.println(Stream.of(1, 2, 3).reduce((x, y) -> x + y));
+
+        // collect
+        // T collect(Supplier<T> supplier, BiConsumer<T, U> accumulator, BiConsumer<T, T> combiner)
+        // T collect(Collector<T> collector)
+        strings = Stream.of("a", "b", "c", "A", "B", "C");
+        StringBuilder collect1 = strings.collect(StringBuilder::new, StringBuilder::append, StringBuilder::append);
+        System.out.println(collect1);
+
+        strings = Stream.of("a", "b", "c", "A", "B", "C");
+        Set<String> collect2 = strings.collect(TreeSet::new, TreeSet::add, TreeSet::addAll);
+        System.out.println(collect2);
+
+        strings = Stream.of("a", "b", "c", "A", "B", "C");
+        Set<String> collect3 = strings.collect(Collectors.toSet());
+        System.out.println(collect3);
+
+        strings = Stream.of("a", "b", "c", "A", "B", "C");
+        List<String> collect4 = strings.collect(Collectors.toList());
+        System.out.println(collect4);
 
     }
 
