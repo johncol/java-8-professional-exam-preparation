@@ -2,5 +2,5 @@ package java8professional.chapter04.optional.functionalInterfaces.java.util.func
 
 @FunctionalInterface
 public interface DoubleSupplier {
-    Double get();
+    double getAsDouble();
 }
