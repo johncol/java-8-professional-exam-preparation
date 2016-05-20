@@ -1,0 +1,16 @@
+
+
+
+						stream			double stream			int stream			long stream
+
+
+stream					Function		ToDoubleFunction		ToIntFunction		ToLongFunction
+
+
+double stream			DoubleFunction  DoubleUnaryOperator		DoubleToIntFunction DoubleToLongFunction
+
+
+int stream				IntFunction 	IntToDoubleFunction 	IntUnaryOperator 	IntToLongFunction
+
+
+long stream				LongFunction 	LongToDoubleFunction 	LongToIntFunction 	LongUnaryOperator
