@@ -1,9 +1,6 @@
 package java8professional.chapter04.streams;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -12,8 +9,8 @@ public class StreamCommonTerminalOperations {
     /**
      * Stream:
      *  - count(): int
-     *  - min(): Optional<T>
-     *  - max(): Optional<T>
+     *  - min(Comparator<? super T>): Optional<T>
+     *  - max(Comparator<? super T>): Optional<T>
      *  - findAny(): Optional<T>
      *  - findFirst(): Optional<T>
      *  - anyMatch(): boolean
@@ -97,14 +94,16 @@ public class StreamCommonTerminalOperations {
         System.out.println(stream.reduce(0, (x, y) -> x + y));
 
         stream = Stream.iterate(1, x -> x + 1).limit(4);
-        System.out.println(stream.reduce(1, (x, y) -> x * y));
+        Integer reduceResult1 = stream.reduce(1, (x, y) -> x * y);
+        System.out.println(reduceResult1);
 
         System.out.println(Stream.of("a", "b", "c").reduce("", String::concat));
 
         // reduce
         // Optional<T> reduce(BinaryOperator<T> accumulator)
         stream = Stream.iterate(1, x -> x + 1).limit(4);
-        stream.reduce((x, y) -> x + y).ifPresent(System.out::println);
+        Optional<Integer> reduceResult2 = stream.reduce((x, y) -> x + y);
+        reduceResult2.ifPresent(System.out::println);
 
         stream = Stream.iterate(1, x -> x + 1).limit(4);
         stream.reduce((x, y) -> x * y).ifPresent(System.out::println);
