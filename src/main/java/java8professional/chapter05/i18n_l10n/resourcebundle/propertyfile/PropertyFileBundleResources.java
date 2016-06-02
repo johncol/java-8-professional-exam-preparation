@@ -1,8 +1,6 @@
-package java8professional.chapter05.i18n_l10n.zoo;
+package java8professional.chapter05.i18n_l10n.resourcebundle.propertyfile;
 
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class PropertyFileBundleResources {
 
