@@ -1,16 +1,11 @@
 package java8professional.chapter05.i18n_l10n.resourcebundle.formatting;
 
-import java.time.format.FormatStyle;
-import java.util.Locale;
-import java.util.ResourceBundle;
-import java.time.LocalDateTime;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
-
 import java.time.format.DateTimeFormatter;
-
-import java.text.MessageFormat;
+import java.time.format.FormatStyle;
 
 public class FormattingDatesAndTimes {
     public static void main(String[] args) {
@@ -55,8 +50,8 @@ public class FormattingDatesAndTimes {
         System.out.println(localDateTime);
         System.out.println();
 
-        DateTimeFormatter dateParser = DateTimeFormatter.ofPattern("yyyy dd MMMM");
-        localDate = LocalDate.parse("1989 24 June", dateParser);
+        DateTimeFormatter dateParser = DateTimeFormatter.ofPattern("yyyy dd MM");
+        localDate = LocalDate.parse("1989 24 06", dateParser);
         System.out.println(localDate);
         System.out.println();
 

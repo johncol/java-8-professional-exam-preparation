@@ -1,9 +1,8 @@
 package java8professional.chapter05.time;
 
-import static java.time.Month.*;
-
 import java.time.*;
-import java.time.zone.ZoneRulesException;
+
+import static java.time.Month.JANUARY;
 
 public class CreatingDatesAndTimes {
 

@@ -31,9 +31,5 @@ public class I18nAndL10n {
         Locale.setDefault(Locale.FRANCE);
         System.out.println(Locale.getDefault());
         System.out.println();
-
-
-
-
     }
 }

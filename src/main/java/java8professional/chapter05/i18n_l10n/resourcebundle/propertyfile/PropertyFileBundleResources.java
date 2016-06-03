@@ -1,6 +1,8 @@
 package java8professional.chapter05.i18n_l10n.resourcebundle.propertyfile;
 
-import java.util.*;
+import java.util.Locale;
+import java.util.Properties;
+import java.util.ResourceBundle;
 
 public class PropertyFileBundleResources {
 
@@ -19,6 +21,7 @@ public class PropertyFileBundleResources {
         System.out.println();
 
         Properties usProperties = getProperties(us);
+        System.out.println(usProperties.get("what!!"));
         System.out.println(usProperties.getProperty("what!!"));
         System.out.println(usProperties.getProperty("what!!", "DEFAULT VALUE FOR 'what!!' KEY"));
         System.out.println(usProperties.getProperty("hello", "hola paisanos"));
