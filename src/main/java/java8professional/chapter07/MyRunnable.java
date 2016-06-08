@@ -1,4 +1,4 @@
-package java8professional.chapter07.threads;
+package java8professional.chapter07;
 
 @FunctionalInterface
 public interface MyRunnable {
