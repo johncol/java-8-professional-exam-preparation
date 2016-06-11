@@ -1,4 +1,4 @@
-package java8professional.chapter07.concurrent.collections;
+package java8professional.chapter07.concurrentcollections;
 
 import java.text.MessageFormat;
 import java.util.Arrays;

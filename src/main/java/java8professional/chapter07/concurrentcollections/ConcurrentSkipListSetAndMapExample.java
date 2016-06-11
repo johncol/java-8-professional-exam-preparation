@@ -1,4 +1,4 @@
-package java8professional.chapter07.concurrent.collections;
+package java8professional.chapter07.concurrentcollections;
 
 import java.util.Map;
 import java.util.Set;

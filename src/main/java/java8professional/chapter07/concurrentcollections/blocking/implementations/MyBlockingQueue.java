@@ -1,4 +1,4 @@
-package java8professional.chapter07.concurrent.collections.blocking.implementations;
+package java8professional.chapter07.concurrentcollections.blocking.implementations;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;

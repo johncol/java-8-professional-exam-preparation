@@ -1,4 +1,4 @@
-package java8professional.chapter07.concurrent.collections.blocking;
+package java8professional.chapter07.concurrentcollections.blocking;
 
 import java.text.MessageFormat;
 import java.util.concurrent.*;
