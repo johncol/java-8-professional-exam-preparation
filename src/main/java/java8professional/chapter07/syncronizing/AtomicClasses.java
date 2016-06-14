@@ -26,7 +26,7 @@ public class AtomicClasses {
         System.out.println();
 
         AtomicLong atomicLong = new AtomicLong(10000);
-        System.out.println(atomicBoolean.get());
+        System.out.println(atomicLong.get());
         System.out.println(atomicLong.getAndAdd(-1000));
         System.out.println(atomicLong);
         System.out.println(atomicLong.getAndSet(3000));
