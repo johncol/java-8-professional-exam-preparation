@@ -1,0 +1,7 @@
+Awesome! It works!
+Look! The hero of Ferelden!
+java8professional.chapter08.streams.examples.sample.DragonAgeCharacter@2f0e140b[
+  name=The Warden
+  type=WARRIOR
+  description=The main protagonist of the game. You become a Grey Warden after going through a unique origin story tailored to your race and background. Afterwards, you go to Ostagar in order to join King Cailan in a supposedly final battle against the Darkspawn. You also need to undergo The Joining, a ceremony in which you are initiated into the Grey Wardens.
+]

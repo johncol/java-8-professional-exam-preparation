@@ -7,5 +7,7 @@ public class OSSeparatorSymbol {
         System.out.println("OS path separator:");
         System.out.println(System.getProperty("file.separator"));
         System.out.println(File.separator);
+        System.out.println("OS line separator:");
+        System.out.println("{" + System.getProperty("line.separator") + "}");
     }
 }
