@@ -9,3 +9,6 @@ chapter 08: 15/23 -> 65.22%
 chapter 09: 17/20 -> 85.00%
 chapter 10: 19/20 -> 95.00%
 overall   175/210 -> 83.33%
+
+test exam1: 54/60 -> 90.00%
+test exam2:

@@ -38,7 +38,7 @@ class LionPenManager2 {
             removeAnimals();
             c1.await();
             cleanPen();
-            c1.await();
+            c2.await();
             addAnimals();
         } catch (BrokenBarrierException | InterruptedException e) {
             System.out.println(e.getClass().getSimpleName() + " -> " + e.getMessage());

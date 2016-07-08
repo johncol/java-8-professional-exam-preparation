@@ -1,9 +1,9 @@
 package java8professional.chapter10;
 
-import java.sql.Connection;
 import java.sql.Driver;
-import java.sql.ResultSet;
+import java.sql.Connection;
 import java.sql.Statement;
+import java.sql.ResultSet;
 
 public class JDBCInterfaces {
 
